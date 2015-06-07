@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIViewController+ScrollingNavbar.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIWebViewDelegate,UIScrollViewDelegate> {
+    IBOutlet UIWebView *webView;
+}
 
-
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topConstraint;
 @end
 
