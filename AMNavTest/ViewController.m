@@ -18,9 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self.navigationController.navigationBar setTranslucent:NO];
-    
-    
+
     [self.navigationController.navigationBar setBarTintColor:[UIColor blueColor]];
     
     webView.scrollView.delegate = self;
